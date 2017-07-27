@@ -54,4 +54,28 @@ fclose(datos);
 
   return 0;
 }
+void coor(){
+double x2= ((double)rand()/RAND_MAX);
+double y2= ((double)rand()/RAND_MAX);
+posx = xnow;
+posy = ynow;
+if(x2 > 0.5){ //Decide si cambiar x o y
+  if(y2 > 0.5){
+    posx += 1;
+                      }
+  else{
+    posx -= 1;
+    }
 
+}
+else{
+  if(y2 > 0.5){
+    posy += 1;
+                }
+  else{
+    posy -= 1;
+          }
+
+        }
+
+     }
